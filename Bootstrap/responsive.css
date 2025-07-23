@@ -1,0 +1,12 @@
+ @media screen and (max-width: 768px) {
+    .res-1{
+        border: none;
+        outline: none;
+    }
+   
+    #Main-section{
+       display: flex;
+  flex-wrap: wrap;
+    }
+  }
+  
