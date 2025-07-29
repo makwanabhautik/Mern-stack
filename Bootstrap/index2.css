@@ -6,7 +6,38 @@
 :root{
     --main-color: #0a4db8;
 }
+.email-subs {
+    display: flex;
+    /* max-width: 500px; */
+}
 
+.email-subs input[type="text"] {
+
+    padding: 5px 15px;
+    border: 1px solid #0ea5e9;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.email-subs .btn {
+    border-radius: 0 50px 50px 0;
+    padding: 12px 30px;
+    background-color: #0ea5e9;
+    border: none;
+}
+
+
+.nav-icon {
+      font-size: 25px;
+      margin-left: 15px;
+      position: relative;
+    }
+    .nav-icon .badge {
+      font-size: 10px;
+      position: absolute;
+      top: -5px;
+      right: -10px;
+    }
 .shop-btn{
     background-color: var(--main-color);
     color: white;
@@ -16,9 +47,42 @@
     color: var(--main-color);
 }
 
-/* .banner .banner-img .image img{
- height: 400px;
-}  */
+
+
+
+
+.banner .content h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #2d465e;
+}
+.banner .content .para{
+    margin-top: 30px;
+    font-size: 25px;
+    color: #2d465e;
+}
+.shopnow{
+    padding: 13px 25px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-right: 15px;
+}
+.viewcollection{
+     padding: 13px 25px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.service div{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.service div i{
+    color: #0ea5e9;
+}
+
+
 .image{
     position: relative;
 }
@@ -60,12 +124,80 @@
     font-size: 12px;
 }
 
+/* section  3 */
+
+.service-provide{
+    background-color: #f3f6fb;
+    margin: 70px 0px;
+}
+
+.service-provide i{
+    font-size: 50px;
+    padding: 20px 0px;
+}
+.service-provide .col-3{
+    padding: 20px 25px;
+    transition: 0.5s;
+}
+.service-provide .title-all{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0a4db8;
+}
+.service-provide p{
+    font-size: 19px;
+}
+
+.service-provide .col-3:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+
+
+
+/* section 4 */
+
+.product-card .card{
+    border: none;
+  box-shadow: 2px 2px 5px whitesmoke;
+  transition: 1s;
+}
+.heading h2{
+    color: #2d465e;
+    padding: 10px 0px;
+}
+.heading p{
+    font-size: 24px;
+    color: black;
+}
+
+.rating i{
+    color: goldenrod;
+}
+.prod h4,h5{
+    color: #2d465e;
+}
+.prod .orignal-price {
+    color: #2d465e;
+}
+
+.product-card .card:hover{
+    transform: translateY(-10px);
+    transition: 0.7s;
+    box-shadow: 3px 3px 5px rgb(243, 236, 236);
+}
+
+
+
+
 .product-card .hover-img{
     display: none;
+    
 }
 
 .product-card:hover .hover-img{
     display: block;
+
 }
 .product-card:hover .normal-img{
     display: none;
@@ -97,3 +229,57 @@
 .product-card:hover .product-icons{
     display: block;
 }
+
+
+/* section 5 */
+.section-5{
+    background-color: #f3f6fb;
+    
+}
+.join-our{
+    color: #2d465e;
+}
+.join-our p{
+    padding: 20px 0px;
+    font-size: 23px;
+}
+
+.subscribe-wrapper {
+      max-width: 700px;
+      margin: 50px auto;
+    }
+
+    .subscribe-form {
+      border: 1.5px solid #0d6efd;
+      border-radius: 999px;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+    }
+
+    .subscribe-input {
+      border: none;
+      outline: none;
+      padding: 15px 25px;
+      flex-grow: 1;
+      border-radius: 999px 0 0 999px;
+    }
+
+    .subscribe-button {
+      border: none;
+      border-radius: 999px;
+      padding: 0 30px;
+      background-color: #0d6efd;
+      color: white;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .subscribe-button:hover {
+      background-color: #0b5ed7;
+    }
+
+    .subscribe-input::placeholder {
+      color: #adb5bd;
+    }
