@@ -79,7 +79,7 @@
                         <li><a class="dropdown-item" href="#">Mega 2 Option 2</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -386,21 +386,484 @@
     </section>
 
     <!-- section 5 -->
-    <section class="section-5 py-4">
+    <section class="section-5 py-5">
         <div class="container">
-            <div class="heading text-center py-5 join-our">
+            <div class="heading text-center join-our">
                 <h1 class="fw-bolder">Join Our Newsletter</h1>
                 <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
             </div>
-            
-            <form class="d-flex subscribe-box">
-                <input type="email" class="subscribe-input" placeholder="Your email address" required>
-                <button type="submit" class="subscribe-button">Subscribe</button>
-            </form>
+            <div class="subscribe-form">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your email address">
+                    <button class="btn btn-subscribe" type="button">Subscribe</button>
+                </div>
+            </div>
         </div>
-        
     </section>
 
+
+    <!-- section 7 -->
+    <section class="section-7 mt-5 pt-5">
+        <div class="container">
+            <div class="all-p-name d-flex gap-4 justify-content-center">
+                <a href="#">
+                    <button class="btn btn-primary rounded-pill py-2 px-4 fs-5 text-dark active">All</button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-secondary rounded-pill py-2 px-4 fs-5 text-dark">Clothing</button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark">Accessories</button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark">Electronic</button>
+                </a>
+            </div>
+            <!-- product -detail -->
+            <div class="row my-5 py-5 ">
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-11.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-11-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                                <span class="card-text fw-bold fs-4 text-primary">$89.99 </span>
+                                <span class="text-decoration-line-through fs-5">/ $79.99</span>
+                                <div class="rating d-flex align-items-center mb-3 py-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-9.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-9-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <h4 class="card-text fw-bold text-primary py-2">$249.99</h4>
+                                <div class="rating d-flex align-items-center mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-3.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-3-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <h4 class="card-text fw-bold text-primary py-2">$59.99</h4>
+                                <div class="rating d-flex align-items-center mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <span class="card-text fw-bold fs-4 text-primary">$79.99 </span>
+                                <span class="text-decoration-line-through fs-5">/ $99.99</span>
+                                <div class="rating d-flex align-items-center py-2 mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-6.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-6-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <h4 class="card-text fw-bold text-primary py-2">$45.99</h4>
+                                <div class="rating d-flex align-items-center mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- 6 -->
+
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-7.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-7-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon ">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <h4 class="card-text fw-bold text-primary py-2">$69.99</h4>
+                                <div class="rating d-flex align-items-center mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- 7 -->
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-5.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-5-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <span class="card-text fw-bold fs-4 text-primary">$199.99 </span>
+                                <span class="text-decoration-line-through fs-5">/ $299.99</span>
+                                <div class="rating d-flex align-items-center py-2  mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="col-3 py-4 px-3">
+                    <div class="product-category-card">
+                        <div class="card">
+                            <div class="product-image">
+                                <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
+
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-8.webp"
+                                    class="card-img-top img-fluid normal-img" alt="...">
+                                <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-8-variant.webp"
+                                    class="hover-img img-fluid" alt="">
+
+                                <div class="add-cart-icon">
+                                    <button
+                                        class="btn btn-primary fw-bold d-flex align-items-center justify-content-center ms-2">
+                                        <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                    </button>
+                                    <div class="icon-list d-flex justify-content-center py-3 gap-3">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-regular fa-eye"></i>
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body prod-7 ">
+                                <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
+                                <h4 class="card-text fw-bold text-primary py-2">$159.99</h4>
+                                <div class="rating d-flex align-items-center mb-3">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="m-0 ps-2">(42)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- section 6  footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Left Column -->
+                <div class="col-md-3 mb-4 addres">
+                    <h2 class="pb-4 fw-bolder">eStore</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula.</p>
+                    <p><i class="fas fa-map-marker-alt icon"></i>123 Fashion Street, New York, NY 10001</p>
+                    <p><i class="fas fa-phone icon"></i>+1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope icon"></i>hello@example.com</p>
+                </div>
+
+                <!-- Shop Links -->
+                <div class="col-md-2 mb-4 ">
+                    <h4 class="pb-4">Shop</h4>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Bestsellers</a>
+                    <a href="#">Women's Clothing</a>
+                    <a href="#">Men's Clothing</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Sale</a>
+                </div>
+
+                <!-- Support Links -->
+                <div class="col-md-2 mb-4">
+                    <h4 class="pb-4">Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Order Status</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns & Exchanges</a>
+                    <a href="#">Size Guide</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-md-2 mb-4">
+                    <h4 class="pb-4">Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Affiliates</a>
+                    <a href="#">Responsibility</a>
+                    <a href="#">Investors</a>
+                </div>
+
+                <!-- Download + Social -->
+                <div class="col-md-3 mb-4 socia-media">
+                    <h4 class="pb-4">Download your App</h4>
+                    <p>Shop on the go with our mobile app</p>
+                    <div class="d-flex store-buttons gap-3 mb-3">
+
+                        <div class="btn-app">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>App store</span>
+                        </div>
+                        <div href="#" class="btn-app">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Google Play</span>
+                        </div>
+                        <!-- <div class="app-store">
+                           <span> <i class="fa-brands fa-apple"></i> App store</span>
+                        </div>
+                        <div class="play-store">
+                           <span> <i class="fa-brands fa-apple"></i> App store</span>
+                        </div> -->
+                    </div>
+                    <h6>Follow Us</h6>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
