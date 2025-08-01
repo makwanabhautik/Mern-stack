@@ -12,6 +12,11 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index2.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 </head>
 
 <body>
@@ -42,7 +47,7 @@
                 <a href="#" class="nav-icon"><i class="fa-solid fa-user"></i></a>
                 <a href="#" class="nav-icon"><i class="fa-regular fa-heart"></i></i><span
                         class="badge bg-primary">0</span></a>
-                <a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span
+                <a href="Cart.html" target="_blank" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span
                         class="badge bg-primary">3</span></a>
             </div>
         </div>
@@ -56,7 +61,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Category</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Product Details</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="Cart.html" target="_blank">Cart</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
@@ -201,8 +206,59 @@
                 </div>
             </div>
         </div>
-
     </section>
+
+    <!-- section 8 -->
+    <!-- slick-slider -->
+    <section class="category-8">
+        <div class="container">
+            <div class="center">
+                <div class="category-box">
+                    <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-m-1.webp"
+                        class="img-fluid " alt="">
+                    <h5>Qusution Rutrinm</h5>
+                    <p>2 Product</p>
+                </div>
+
+                <div class="category-box">
+                    <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                        class="img-fluid" alt="">
+                    <h5>Qusution Rutrinm</h5>
+                    <p>2 Product</p>
+                </div>
+
+                <div class="category-box">
+                    <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-1.webp"
+                        class="img-fluid" alt="">
+                    <h5>Qusution Rutrinm</h5>
+                    <p>2 Product</p>
+                </div>
+
+                <div class="category-box">
+                    <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-10.webp"
+                        class="img-fluid" alt="">
+                    <h5>Qusution Rutrinm</h5>
+                    <p>2 Product</p>
+                </div>
+
+                <div class="category-box">
+                    <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-6.webp"
+                        class="img-fluid" alt="">
+                    <h5>Qusution Rutrinm</h5>
+                    <p>2 Product</p>
+                </div>
+
+                <div class="category-box">
+                    <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-f-1.webp"
+                        class="img-fluid" alt="">
+                    <h5>Qusution Rutrinm</h5>
+                    <p>2 Product</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- section 4 -->
     <section class="best-sellers my-5">
@@ -403,25 +459,29 @@
 
 
     <!-- section 7 -->
+
     <section class="section-7 mt-5 pt-5">
         <div class="container">
             <div class="all-p-name d-flex gap-4 justify-content-center">
-                <a href="#">
-                    <button class="btn btn-primary rounded-pill py-2 px-4 fs-5 text-dark active">All</button>
-                </a>
-                <a href="#">
-                    <button class="btn btn-secondary rounded-pill py-2 px-4 fs-5 text-dark">Clothing</button>
-                </a>
-                <a href="#">
-                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark">Accessories</button>
-                </a>
-                <a href="#">
-                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark">Electronic</button>
-                </a>
-            </div>
+                
+                    <button class="btn btn-primary rounded-pill py-2 px-4 fs-5 text-dark active"
+                        data-filter="all">All</button>
+            
+                
+                    <button class="btn btn-secondary rounded-pill py-2 px-4 fs-5 text-dark"
+                        data-filter="Clothing">Clothing</button>
+                
+                
+                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark"
+                        data-filter="Accessories">Accessories</button>
+                
+                
+                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark"
+                        data-filter="Electronic">Electronic</button>
+                    </div>
             <!-- product -detail -->
-            <div class="row my-5 py-5 ">
-                <div class="col-3 py-4 px-3">
+            <div class="row my-5 py-5">
+                <div class="col-3 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -465,7 +525,7 @@
                 </div>
 
                 <!-- 2 -->
-                <div class="col-3 py-4 px-3">
+                <div class="col-3 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -493,7 +553,6 @@
                                 <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
                                 <h4 class="card-text fw-bold text-primary py-2">$249.99</h4>
                                 <div class="rating d-flex align-items-center mb-3">
-
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -507,7 +566,7 @@
                     </div>
                 </div>
                 <!-- 3 -->
-                <div class="col-3 py-4 px-3">
+                <div class="col-3 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -549,7 +608,7 @@
                     </div>
                 </div>
                 <!-- 4 -->
-                <div class="col-3 py-4 px-3">
+                <div class="col-3 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -594,7 +653,7 @@
 
                 <!-- 5 -->
 
-                <div class="col-3 py-4 px-3">
+                <div class="col-3 py-4 px-3 product-item all Accessories">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -635,9 +694,9 @@
                         </div>
                     </div>
                 </div>
-<!-- 6 -->
+                <!-- 6 -->
 
-                <div class="col-3 py-4 px-3">
+                <div class="col-3 py-4 px-3 product-item all Accessories">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -679,8 +738,8 @@
                     </div>
                 </div>
 
-<!-- 7 -->
-                <div class="col-3 py-4 px-3">
+                <!-- 7 -->
+                <div class="col-3 py-4 px-3 product-item all Electronic">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -724,12 +783,11 @@
                 </div>
 
                 <!-- 8 -->
-                <div class="col-3 py-4 px-3">
+                <div class="col-3 py-4 px-3 product-item all Electronic">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
                                 <h6 class="badge bg-success m-2 px-3 py-2">SALE</h6>
-
                                 <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-8.webp"
                                     class="card-img-top img-fluid normal-img" alt="...">
                                 <img src="https://bootstrapmade.com/content/demo/eStore/assets/img/product/product-8-variant.webp"
@@ -747,7 +805,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card-body prod-7 ">
                                 <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
                                 <h4 class="card-text fw-bold text-primary py-2">$159.99</h4>
@@ -765,14 +822,11 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
 
     </section>
-
+    
 
 
 
@@ -864,6 +918,42 @@
             </div>
         </div>
     </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            autoplay: true,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

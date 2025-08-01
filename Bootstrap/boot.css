@@ -250,7 +250,7 @@ i {
 /* section 8 */
 
 .content-8 {
-    background-image: url('./building.jpg');
+    background-image: url('/imgall/building.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     /* Do not repeat the image */

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,10 @@
 
 :root {
     --main-color: #0a4db8;
+    --main-font: 'Nunito Sans', sans-serif;
+}
+body{
+    font-family: var(--main-font);
 }
 
 .email-subs {
@@ -383,6 +388,10 @@ h2 {
 
         /* section 7 */
 
+.all-p-name button:focus {
+  outline: none ;
+  box-shadow: none !important;
+}
 .product-category-card .card {
     border: none;
     box-shadow: 2px 2px 5px rgb(234, 220, 220);
@@ -404,6 +413,7 @@ h5 {
 }
 
 .product-category-card .hover-img {
+    background-image: linear-gradient(white , black);
     display: none;
 
 }
@@ -446,7 +456,32 @@ h5 {
 }
 
 
+/* section 8 slick slider  */
 
+.category-8 .category-box{
+    background-color: #f4f4f4;
+    width: 80px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.category-box img{
+    height: 100px;
+    /* width: 100px; */
+    margin: auto;
+    /* margin-left: 70px; */
+}
+.category-box h5{
+    margin-top: 10px;
+    font-size: 20px;
+    /* text-align: center; */
+    color: black;
+}
+.slick-prev:before,
+.slick-next:before{
+    color: black !important;
+}
 
 
 
@@ -495,6 +530,7 @@ h5 {
 }
 
 /* contect mail number section */
+
 .contact-section .contact-box {
     box-shadow: 2px 2px 2px 5px rgb(238, 235, 235);
     width: 100%;
@@ -528,4 +564,91 @@ h5 {
     border-color: #000000;
     /* Optional: change color */
     outline: none;
+}
+
+
+/* ------------cart page css --------------*/
+
+
+.cart-section .cart{
+    /* box-shadow: 2px 2px 2px 5px rgb(245, 242, 242); */
+    /* border: 2px solid black; */
+    /* box-shadow: 2px 2px 2px 5px rgb(245, 242, 242); */
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.cart-section .cart-bord{
+    border-top: 4px solid blue;
+   
+
+}
+.cart-title h6{
+    margin-bottom: 0;
+}
+.cart-product{
+    display: flex;
+}
+.cart-product img{
+    height: 70px;
+    margin-right: 20px;
+    border: 1px solid rgb(230, 224, 224);
+    padding: 10px;
+    border-radius: 5px;
+}
+.cart-product .product-color,
+.cart-product .product-size{
+    border: 1px solid rgb(236, 226, 226);
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 5px 4px;
+    margin: 0px 10px 0px 0px;
+}
+.cart-data{
+    margin: 20px 0;
+    border: 1px solid rgb(244, 235, 235);
+    padding: 20px;
+    border-radius: 5px;
+}
+.cart-data:hover{
+        border: 1px solid skyblue;
+
+}
+
+.cart-data .remove{
+    color:red;
+    margin-top: 12px;
+    font-size: 14px;   
+}
+.product-details .product-title{
+    color: #2d465e;
+}
+.price-tag .current-price{
+    color: #2d465e;
+}
+
+
+.coopen-code{
+    display: flex;
+    /* max-width: 500px; */
+
+}
+
+.coopen-code input[type="text"] {
+
+    padding: 5px 15px;
+    border: 1px solid  #0a4db8;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.coopen-code button {
+    border-radius: 0 50px 50px 0;
+    padding: 5px 15px;
+    background-color: #0a4db8;
+    /* border: none;
+    outline: none; */
+}
+.coopen-code button:focus{
+     outline: none ;
+     box-shadow: none !important;
 }
