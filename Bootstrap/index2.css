@@ -577,9 +577,8 @@ h5 {
     border-radius: 5px;
     padding: 10px 20px;
 }
-.cart-section .cart-bord{
-    border-top: 4px solid blue;
-   
+.cart-section .cart{
+    /* border-top: 4px solid blue; */
 
 }
 .cart-title h6{
@@ -652,3 +651,4 @@ h5 {
      outline: none ;
      box-shadow: none !important;
 }
+
