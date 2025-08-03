@@ -196,11 +196,15 @@ body{
     color: goldenrod;
 }
 
-.prod h4,
-h5 {
+.prod h4{
     color: #2d465e;
 }
-
+.prod h5{
+    color: #2d465e;
+}
+.spec{
+    color: #2d465e;
+}
 .prod .orignal-price {
     color: #2d465e;
 }
@@ -650,5 +654,53 @@ h5 {
 .coopen-code button:focus{
      outline: none ;
      box-shadow: none !important;
+}
+
+
+.sipping .form-check-input:focus{
+    outline: none;
+    box-shadow: none !important;
+}
+.tax strong{
+    color: #3b5998;
+}
+.discount{
+    color: #3b5998;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+
+
+.total-box{
+    background-color: #dfe1e6;
+    border-radius: 10px;
+}
+
+.total-box h5{
+    color: #3b5998;
+}
+
+.check-out button:focus{
+    outline: none ;
+    box-shadow: none !important;
+}
+.continu-shoping button:focus{
+    outline: none ;
+    box-shadow: none !important;
+}
+.check-out button{
+    padding: 15px 80px;
+}
+.continu-shoping button{
+    background-color: #dfe1e6;
+    padding: 10px 93px;
+    color: var(--main-color);
+}
+
+
+
+/*--------- About Us page css --------------*/
+.first h2{
+    color: #3b5998;
 }
 
