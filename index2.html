@@ -12,6 +12,7 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="media.css">
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
@@ -21,83 +22,91 @@
 
 <body>
 
-    <!-- section 1 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-1">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary fs-2" href="#">eStore</a>
-            <!-- Search Bar -->
 
-            <!-- <div class="d-flex justify-content-center">
-                <form class="d-flex search-box" role="search">
-                    <input class="form-control me-2 search-input" type="search" placeholder="Search for products"
-                        aria-label="Search">
-                    <button class="btn search-btn" type="submit">
-                       <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div> -->
-
-            <div class="email-subs">
-                <input type="text" placeholder="Email address...">
-                <button class="btn btn-primary"> <i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            <!-- search box -->
+            <form class="d-flex search-box " style="max-width: 500px;" role="search">
+                <input class="form-control search-input" type="search" placeholder="Search for products"
+                    aria-label="Search">
+                <button class="btn search-btn mx-1 my-1" type="submit">
+                    <i class="fa-solid fa-magnifying-glass text-white"></i>
+                </button>
+            </form>
 
             <!-- Icons -->
             <div class="d-flex align-items-center">
                 <a href="#" class="nav-icon"><i class="fa-solid fa-user"></i></a>
                 <a href="#" class="nav-icon"><i class="fa-regular fa-heart"></i></i><span
                         class="badge bg-primary">0</span></a>
-                <a href="Cart.html" target="_blank" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span
+                <a href="Cart.html" target="_blank" class="nav-icon"><i class="fa-solid fa-cart-shopping fs-3"></i><span
                         class="badge bg-primary">3</span></a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Menu -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-top">
         <div class="container">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="categories.html" target="_blank">Category</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Product Details</a></li>
-                <li class="nav-item"><a class="nav-link" href="Cart.html" target="_blank">Cart</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Option 1</a></li>
-                        <li><a class="dropdown-item" href="#">Option 2</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Megamenu 1</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mega Option 1</a></li>
-                        <li><a class="dropdown-item" href="#">Mega Option 2</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Megamenu 2</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mega 2 Option 1</a></li>
-                        <li><a class="dropdown-item" href="#">Mega 2 Option 2</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
-            </ul>
+            <!-- Toggle Button -->
+            <button class="navbar-toggler nav" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Menu Items -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="inde">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html" target="_blank">Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cart.html" target="_blank">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Megamenu
+                            1</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mega Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Mega Option 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Megamenu
+                            2</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mega 2 Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Mega 2 Option 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+
     <!-- section 2 -->
     <section class="banner">
         <div class="container">
             <div class="row align-items-center ">
-                <div class="col-6">
-                    <div class="content ">
-                        <button type="button" class="btn btn-primary rounded-pill py-2 fw-bold fs-6 my-5">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="content">
+                        <button type="button"
+                            class="new-collection btn btn-primary rounded-pill py-lg-2  fw-bold fs-lg-6 my-lg-5 my-sm-3 ">
                             New Collection 2025
                         </button>
-                        <h1>Discover Stylish <br><span style="color: blueviolet;">Fashiron </span>For<br> Every Season
+                        <h1 class="discover">Discover Stylish <br><span style="color: blueviolet;">Fashiron
+                            </span>For<br> Every Season
                         </h1>
                         <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic perferendis
                             voluptatem dolore
@@ -106,16 +115,16 @@
                                 class="fa-solid fa-right-long px-2"></i></button>
                         <button class="btn view-btn viewcollection mt-3">View Collection</button>
 
-                        <div class="service d-flex">
-                            <div class="freeshiping">
+                        <div class="service d-lg-flex">
+                            <div class="freeshiping py-sm-0">
                                 <i class="fa-solid fa-truck-fast"></i>
                                 Free Shiping
                             </div>
-                            <div class="securepayment ms-4">
+                            <div class="securepayment ms-lg-4">
                                 <i class="fa-solid fa-shield-halved"></i>
                                 Secure Payment
                             </div>
-                            <div class="easyreturn ms-4">
+                            <div class="easyreturn ms-lg-4">
                                 <i class="fa-solid fa-arrow-rotate-left"></i>
                                 Secure Payment
                             </div>
@@ -125,7 +134,7 @@
                 </div>
 
 
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12">
                     <div class="banner-img">
                         <div class="image">
                             <div class="discount">
@@ -138,7 +147,7 @@
                                             class="img-fluid" alt="">
                                     </div>
                                     <div class="col-8">
-                                        <h6>Summer Collection</h6>
+                                        <h6 class="mt-sm-2">Summer Collection</h6>
                                         <p>$99</p>
                                     </div>
                                 </div>
@@ -151,7 +160,7 @@
                                             class="img-fluid" alt="">
                                     </div>
                                     <div class="col-8">
-                                        <h6>Summer Collection</h6>
+                                        <h6 class="mt-sm-2">Summer Collection</h6>
                                         <p>$99</p>
                                     </div>
                                 </div>
@@ -169,7 +178,7 @@
     <section class="service-provide py-5">
         <div class="container align-items-center">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <div class="free-shipig text-center">
                         <i class="fa-solid fa-truck-fast"></i>
                         <p class="title-all">Free Shipping</p>
@@ -178,7 +187,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <div class="free-shipig text-center">
                         <i class="fa-solid fa-piggy-bank"></i>
                         <p class="title-all">Money Back Guarantee</p>
@@ -187,7 +196,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <div class="free-shipig text-center">
                         <i class="fa-solid fa-percent"></i>
                         <p class="title-all">Discount Offers</p>
@@ -196,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <div class="free-shipig text-center">
                         <i class="fa-solid fa-headset"></i>
                         <p class="title-all">24*7 supports</p>
@@ -268,7 +277,7 @@
                     <h2 class="fw-bolder fs-1 best-sel">Best Sellers</h2>
                     <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <div class="product-card">
                         <div class="card">
 
@@ -303,14 +312,14 @@
                                     <p class="m-0 ps-2">(42)</p>
                                 </div>
                                 <button
-                                    class="btn btn-primary p-3 px-5 fw-bold d-flex align-items-center justify-content-center ms-2 "><i
-                                        class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                                    class="addtocart btn btn-primary px-lg-5 py-xl-3 py-lg-0  fw-bold d-lg-flex align-items-center justify-content-center ">
+                                    <i class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <div class="product-card">
                         <div class="card">
 
@@ -347,14 +356,15 @@
                                     <p class="m-0 ps-2">(42)</p>
                                 </div>
                                 <button
-                                    class="btn btn-primary p-3 px-5 fw-bold d-flex align-items-center justify-content-center ms-2 "><i
-                                        class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                                    class="addtocart btn btn-primary px-lg-5  py-xl-3 py-lg-0  fw-bold d-lg-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <div class="product-card">
                         <div class="card">
 
@@ -389,14 +399,15 @@
                                     <p class="m-0 ps-2">(42)</p>
                                 </div>
                                 <button
-                                    class="btn btn-primary p-3 px-5 fw-bold d-flex align-items-center justify-content-center ms-2 "><i
-                                        class="fa-solid fa-cart-plus"></i> ADD TO CART</button>
+                                    class="addtocart btn btn-primary px-lg-5  py-xl-3 py-lg-0  fw-bold d-lg-flex align-items-center justify-content-center ">
+                                    <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <div class="product-card">
                         <div class="card">
 
@@ -431,8 +442,9 @@
                                     <p class="m-0 ps-2">(42)</p>
                                 </div>
                                 <button
-                                    class="btn btn-secondary btn-disabled disabled p-3 px-5 fw-bold d-flex align-items-center justify-content-center ms-4 "><i
-                                        class="fa-solid fa-cart-plus"></i>Sold Out</button>
+                                    class="addtocart btn btn-primary px-lg-5  py-lg-0  py-xl-3 fw-bold d-lg-flex align-items-center justify-content-center ">
+                                    <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -462,26 +474,26 @@
 
     <section class="section-7 mt-5 pt-5">
         <div class="container">
-            <div class="all-p-name d-flex gap-4 justify-content-center">
-                
-                    <button class="btn btn-primary rounded-pill py-2 px-4 fs-5 text-dark active"
-                        data-filter="all">All</button>
-            
-                
-                    <button class="btn btn-secondary rounded-pill py-2 px-4 fs-5 text-dark"
-                        data-filter="Clothing">Clothing</button>
-                
-                
-                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark"
-                        data-filter="Accessories">Accessories</button>
-                
-                
-                    <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark"
-                        data-filter="Electronic">Electronic</button>
-                    </div>
+            <div class="all-p-name d-flex gap-lg-3 justify-content-center">
+
+                <button class="btn btn-primary rounded-pill py-lg-2 py-sm-1  px-lg-4 px-sm-3 fs-5  text-dark active"
+                    data-filter="all">All</button>
+
+
+                <button class="btn btn-secondary rounded-pill py-2 px-4 fs-5 text-dark"
+                    data-filter="Clothing">Clothing</button>
+
+
+                <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark"
+                    data-filter="Accessories">Accessories</button>
+
+
+                <button class="btn btn-secondary  rounded-pill py-2 px-4 fs-5 text-dark"
+                    data-filter="Electronic">Electronic</button>
+        </div>
             <!-- product -detail -->
             <div class="row my-5 py-5">
-                <div class="col-3 py-4 px-3 product-item all Clothing">
+                <div class="col-lg-3 col-sm-6 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -510,7 +522,6 @@
                                 <span class="card-text fw-bold fs-4 text-primary">$89.99 </span>
                                 <span class="text-decoration-line-through fs-5">/ $79.99</span>
                                 <div class="rating d-flex align-items-center mb-3 py-2">
-
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -525,7 +536,7 @@
                 </div>
 
                 <!-- 2 -->
-                <div class="col-3 py-4 px-3 product-item all Clothing">
+                <div class="col-lg-3 col-sm-6  py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -566,7 +577,7 @@
                     </div>
                 </div>
                 <!-- 3 -->
-                <div class="col-3 py-4 px-3 product-item all Clothing">
+                <div class="col-lg-3 col-sm-6 col-6 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -608,7 +619,7 @@
                     </div>
                 </div>
                 <!-- 4 -->
-                <div class="col-3 py-4 px-3 product-item all Clothing">
+                <div class="col-lg-3 col-sm-6 col-6 py-4 px-3 product-item all Clothing">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -653,7 +664,7 @@
 
                 <!-- 5 -->
 
-                <div class="col-3 py-4 px-3 product-item all Accessories">
+                <div class="col-lg-3 col-sm-6 col-6 py-4 px-3 product-item all Accessories">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -696,7 +707,7 @@
                 </div>
                 <!-- 6 -->
 
-                <div class="col-3 py-4 px-3 product-item all Accessories">
+                <div class="col-lg-3 col-sm-6 col-6 py-4 px-3 product-item all Accessories">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -739,7 +750,7 @@
                 </div>
 
                 <!-- 7 -->
-                <div class="col-3 py-4 px-3 product-item all Electronic">
+                <div class="col-lg-3 col-sm-6 col-6 py-4 px-3 product-item all Electronic">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -783,7 +794,7 @@
                 </div>
 
                 <!-- 8 -->
-                <div class="col-3 py-4 px-3 product-item all Electronic">
+                <div class="col-lg-3 col-sm-6 col-6 py-4 px-3 product-item all Electronic">
                     <div class="product-category-card">
                         <div class="card">
                             <div class="product-image">
@@ -826,7 +837,6 @@
         </div>
 
     </section>
-    
 
 
 
@@ -836,7 +846,8 @@
 
 
 
-     <!-- section 6  footer section -->
+
+    <!-- section 6  footer section -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -933,7 +944,7 @@
             dots: true,
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 900,
                     settings: {
                         arrows: false,
                         centerMode: true,
@@ -942,12 +953,12 @@
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 576,
                     settings: {
                         arrows: false,
                         centerMode: true,
                         centerPadding: '40px',
-                        slidesToShow: 1
+                        slidesToShow: 2
                     }
                 }
             ]
